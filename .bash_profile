@@ -40,9 +40,7 @@ if [ -e "$tf" ]; then
     if [ "$fp" -ne 600 ]; then
         echo "Warning: .token file has too open permissions"
     fi
-else
-    echo ".token file does not exist"
-fi
+
 
 #echo the date UTC time
 date -u
