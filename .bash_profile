@@ -9,6 +9,7 @@ fi
 export PATH=$PATH:$HOME/bin:/usr/local/bin
 
 # Set environment variables
+export COURSE_ID=DevOpsTheHardWay
 export EDITOR=nano
 export HISTSIZE=1000
 export HISTFILESIZE=2000
