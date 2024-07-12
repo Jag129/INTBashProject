@@ -13,18 +13,16 @@ export COURSE_ID='DevOpsTheHardWay'
 export EDITOR=nano
 export HISTSIZE=1000
 export HISTFILESIZE=2000
-export COURSE_ID='DevOpsTheHardWay'
-export COURSE_ID=DevOpsTheHardWay
+
 # Set custom prompt (PS1)
 export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]$ "
-
 
 # Alias definitions
 alias ll='ls -la'
 alias gs='git status'
 alias gp='git pull'
 alias venv='source venv/bin/activate'
-alias ltxt='ls -la |grep -i *.txt'
+alias ltxt='ls -la | grep -i *.txt'
 
 # Start the ssh-agent
 eval "$(ssh-agent -s)"
@@ -42,17 +40,17 @@ if [ -e "$tf" ]; then
     if [ "$fp" -ne 600 ]; then
         echo "Warning: .token file has too open permissions"
     fi
+fi
 
-
-#echo the date UTC time
+# echo the date UTC time
 date -u
 
-#clean tmp
+# Clean tmp
 tmp="$HOME/tmp"
 if [ ! -e $tmp ]; then
-	echo "tmp does not exist"
+    echo "tmp does not exist"
 else
-	rm -rf "$tmp"/*
+    rm -rf "$tmp"/*
 fi
 
 # Custom functions
@@ -60,14 +58,12 @@ function mkcd() {
     mkdir -p "$1"
     cd "$1"
 }
-#set the umask
+
+# Set the umask
 umask 007
 
-#kill the 8080 port related process
+# Kill the 8080 port related process
 fuser -k 8080/tcp
-
-
-
 
 # Conditional statements
 if [ "$(uname)" == "Darwin" ]; then
@@ -80,9 +76,8 @@ else
 fi
 
 # Adding user-specific bin directories to PATH
-
 export PATH=$HOME/.local/bin:$PATH
-export PATH=$PATH:/home/$user/usercommands
+export PATH=$PATH:/home/$USER/usercommands
 
 # Load nvm (Node Version Manager)
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
@@ -95,5 +90,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 # Source global definitions (if any)
 if [ -f /etc/bashrc ]; then
     source /etc/bashrc
-fi
 fi
