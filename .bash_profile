@@ -44,7 +44,8 @@ if [ -e "$tf" ]; then
 fi
 
 # echo the date UTC time
-date -u
+date -u +%H:%M:%SZ
+
 
 # Clean tmp
 tmp="$HOME/tmp"
