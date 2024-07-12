@@ -58,7 +58,7 @@ function mkcd() {
     mkdir -p "$1"
     cd "$1"
 }
-export COURSE_ID=DevOpsTheHardWay
+export COURSE_ID='DevOpsTheHardWay'
 #set the umask
 umask 007
 
