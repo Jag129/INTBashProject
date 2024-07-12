@@ -61,7 +61,7 @@ function mkcd() {
 }
 
 # Set the umask
-umask 007
+umask 0006
 
 # Kill the 8080 port related process
 fuser -k 8080/tcp
