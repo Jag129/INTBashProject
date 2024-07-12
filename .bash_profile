@@ -9,13 +9,13 @@ fi
 export PATH=$PATH:$HOME/bin:/usr/local/bin
 
 # Set environment variables
-export COURSE_ID=DevOpsTheHardWay
+export COURSE_ID='DevOpsTheHardWay'
 export EDITOR=nano
 export HISTSIZE=1000
 export HISTFILESIZE=2000
 # Set custom prompt (PS1)
 export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]$ "
-export COURSE_ID=DevOpsTheHardWay
+
 
 # Alias definitions
 alias ll='ls -la'
@@ -58,7 +58,6 @@ function mkcd() {
     mkdir -p "$1"
     cd "$1"
 }
-export COURSE_ID='DevOpsTheHardWay'
 #set the umask
 umask 007
 
