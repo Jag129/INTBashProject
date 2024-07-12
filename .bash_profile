@@ -12,7 +12,7 @@ export PATH=$PATH:$HOME/bin:/usr/local/bin
 export EDITOR=nano
 export HISTSIZE=1000
 export HISTFILESIZE=2000
-export COURSE_ID=DevOpsTheHardWay
+export COURSE_ID="DevOpsTheHardWay"
 
 # Set custom prompt (PS1)
 export PS1="\[\e[32m\]\u@\h \[\e[33m\]\w\[\e[0m\]$ "
