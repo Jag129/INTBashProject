@@ -10,6 +10,7 @@ export PATH=$PATH:$HOME/bin:/usr/local/bin
 
 # Set environment variables
 export COURSE_ID='DevOpsTheHardWay'
+export COURSE_ID='__REPO_NAME__'
 export EDITOR=nano
 export HISTSIZE=1000
 export HISTFILESIZE=2000
