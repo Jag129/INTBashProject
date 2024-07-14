@@ -44,8 +44,7 @@ if [ -e "$tf" ]; then
 fi
 
 # echo the date UTC time
-date -u +%Y-%m-%dT%H:%M:%S%:z
-
+date --iso-8601=seconds
 
 
 # Clean tmp
