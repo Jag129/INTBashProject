@@ -29,6 +29,7 @@ alias ltxt='ls -la | grep -i *.txt'
 eval "$(ssh-agent -s)"
 echo "Hello $USER "
 
+#create tmp folder
 mkdir $HOME/tmp
 
 # Define the path to the .token file
